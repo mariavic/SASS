@@ -1,0 +1,88 @@
+@import "normalize";
+@import "palette";
+@import "variables";
+
+body{
+	margin: auto;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+h1{
+	color: #000;
+	font-family: 'Helvetica', sans-serif;
+	align-text: center;
+	margin: 20px 0;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+ul{
+	display: flex;
+	.circle{
+		width: $size;
+		height:  $size;
+		border-radius: $radius;
+		margin: 0 5px;
+		transition: all .5s ease;
+		&.facebook{
+			background: $facebook_color;
+			&:hover{
+				background: darken($facebook_color,10%);
+			&:active{
+				background: lighten($facebook_color,10%);
+			}
+			}	
+		}
+		&.twitter{
+			background: $twitter_color;
+			&:hover{
+				background: darken($twitter_color,10%);
+			}
+			&:active{
+				background: lighten($twitter_color,10%);
+			}						
+		}
+		&.linkedin{
+			background: $linkedin_color;
+			&:hover{
+				background: darken($linkedin_color,10%);
+			}
+			&:active{
+				background: lighten($linkedin_color,10%);
+			}						
+		}
+		&.google-plus{
+			background: $google_plus_color;
+			&:hover{
+				background: darken($google_plus_color,10%);
+			}	
+			&:active{
+				background: lighten($google_plus_color,10%);
+			}			
+		}
+		&.pinterest{
+			background: $pinterest_color;
+			&:hover{
+				background: darken($pinterest_color,10%);
+			}
+			&:active{
+				background: lighten($pinterest_color,10%);
+			}						
+		}
+		.social-btn{
+			text-decoration: none;
+			color: #fff;
+			display: flex;
+			width: $size;
+			height:  $size;
+			border-radius: $radius;
+			justify-content: center;
+			align-items: center;		
+		}
+	&:hover{
+		transform: scale(1.1,1.1);
+	}	
+	}
+}

@@ -20,6 +20,7 @@ h1{
 
 ul{
 	display: flex;
+	list-style: none;
 	.circle{
 		width: $size;
 		height:  $size;
